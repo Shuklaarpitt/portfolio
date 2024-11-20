@@ -7,6 +7,8 @@
 body{
     background: #080808;
     color: #fff;
+    user-select: none;
+    -webkit-user-drag: none ;
 }
 nav{
     padding: 10px 20px;
@@ -15,6 +17,7 @@ nav{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
+    z-index: 1000;
     justify-content: space-between;
     vertical-align: middle;
     position: fixed;
@@ -102,7 +105,7 @@ nav ul li:hover::after{
     display: flex;
     img{
         width: 500px;
-        border-radius: 1000px;
+        border-radius: 50%;
     }
 }
 #About-content{
@@ -110,6 +113,7 @@ nav ul li:hover::after{
     margin-top: 3%;
     padding: 7em 0 8em 5em;
     h2{
+        font-size: 2.5rem;
         font-weight: bold;
         text-decoration: underline #ff004f;
         margin: 0 0 20px 0;
@@ -128,9 +132,15 @@ nav ul li:hover::after{
     border: 2px solid #ff004f;
     transition: border-color 1s ease;/* transition: border 0.125s; */
 }
-#project-content span{
+#project-content #project-p{
     font-size: 5rem;
     margin-left: 1%;
+}
+#project-content{
+
+    #project-p::first-letter{
+    color: #ff004f;
+    }
 }
 #project{
     display: block;
@@ -141,6 +151,7 @@ nav ul li:hover::after{
     background-color: #3C3C3C;
     width: 25%;
     margin: 3%;
+    z-index: 1;
     text-align: justify;
     padding: 0.5% 1% 1% 1%;
     h2{
@@ -155,27 +166,34 @@ nav ul li:hover::after{
     transform: scale(1.1);
     background: linear-gradient(180deg, #FF004F, #ff004f);;
     color: #080808;
-    transition: 0.7s ease-out;
+    transition: 0.6s ease-out;
 }
 #Skill-content{
     margin-top: 3%;
-    span{
+    #MySkill{
     font-size: 5rem;
     margin-left: 1%;
+    }
+    #MySkill::first-letter{
+        color: #ff004f;
     }
 }
 #Skill{
     display: block;
-    img{
+    div{
         display: inline-block;
-        position: relative;
-        height: 300px;
-        margin: 6%;
-        border: 2px solid #2abfff;
-        z-index: 0;
+        background: linear-gradient(180deg, #3C3C3C, #1C1C1C);
+        width: 25%;
+        margin: 3%;
+        text-align: center;
+        border-radius: 15px;
+    img{
+        height: 301px;
+        width: fit-content;
+        }
     }
 }
-#Skill img::after{
+/* #Skill #img1::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -184,10 +202,91 @@ nav ul li:hover::after{
     width: 100%;
     height: 0;
     z-index: 1;
-    background: linear-gradient(180deg, #FF004F, #ff004f);
-    opacity: 0.5;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #2abfff, #0071FF);
+    opacity: 0.7;
     transition: 150ms ease-in-out;
 }
-#Skill img:hover::after{
+#Skill #img1:hover::after{
     height: 100%;
+}
+#Skill #img1:hover{
+    transform: scale(1.1);
+    transition: 150ms ease-out;
+}
+#Skill #img2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #2abfff, #0071FF);
+    opacity: 0.8;
+    transition: 150ms ease-in-out;
+}
+#Skill #img2:hover::after{
+    height: 100%;
+}
+#Skill #img2:hover{
+    transform: scale(1.1);
+    transition: 150ms ease-out;
+}
+#Skill #img3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    z-index: 2;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #2abfff, #0071FF);
+    opacity: 0.8;
+    transition: 150ms ease-in-out;
+}
+#Skill #img3:hover::after{
+    height: 100%;
+}
+#Skill #img3:hover{
+    transform: scale(1.1);
+    transition: 150ms ease-out;
+} */
+#Skill-content .img-content{
+    margin-top: 30px;
+    text-align: center;
+    /* display: inline-block; */
+    width: 25%;
+    margin: 3%;
+    border-radius: 15px;
+    padding: 0 5px 5px 5px;
+    display: none;
+    h2{
+        padding-bottom: 20px;
+        font-size: 2rem;
+        text-decoration: underline #ff004f;
+    }
+}
+#img1:hover #img-content1{
+        display: inline-block;
+        background: linear-gradient(270deg, #2abfff, #0071FF);
+    transition: display 0.15s;
+}
+#img2:hover{
+    #img-content2{
+        display: inline-block;
+        background: linear-gradient(270deg, #2abfff, #0071FF);
+    transition: display 0.15s;
+    }
+}
+#img3:hover{
+    #img-content3{
+        display: inline-block;
+        background: linear-gradient(270deg, #2abfff, #0071FF);
+    transition: display 0.15s;
+    }
 }
