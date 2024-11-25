@@ -190,8 +190,8 @@ nav ul li:hover::after{
     img{
         height: 301px;
         width: fit-content;
-        }
-    }
+     }
+    } 
 }
 /* #Skill #img1::after{
     content: "";
@@ -271,7 +271,7 @@ nav ul li:hover::after{
         text-decoration: underline #ff004f;
     }
 }
-#img1:hover #img-content1{
+/* #img1:hover #img-content1{
         display: inline-block;
         background: linear-gradient(270deg, #2abfff, #0071FF);
     transition: display 0.15s;
@@ -289,4 +289,16 @@ nav ul li:hover::after{
         background: linear-gradient(270deg, #2abfff, #0071FF);
     transition: display 0.15s;
     }
-}
+} */
+ #img1{
+    background: url(Java.png) no-repeat center fixed;
+    background-size: cover;
+ }
+ #img2{
+    background: url(DSA.png) no-repeat center fixed;
+    background-size: cover;
+ }
+ #img3{
+    background: url(web\ development.png) no-repeat center fixed;
+    background-size: cover;
+ }
