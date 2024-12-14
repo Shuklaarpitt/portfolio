@@ -144,6 +144,7 @@ nav ul li:hover::after{
     transition: 0.6s ease-out;
 }
 #Skill-content{
+    width: 100%;
     margin-top: 3%;
     #MySkill{
     font-size: 5rem;
@@ -216,4 +217,16 @@ nav ul li:hover::after{
       .container .btn:hover {
         background-color: #080808;
         color: #fff;
+}
+#contact{
+    display: block;
+    margin: 3%;
+    border-radius: 20px;
+    background-color: #ff004f;
+    #Contact-Me{
+        font-size: 5rem;
+    }
+    #Contact-Me::first-letter{
+        color: #ff004f;
+    }
 }
