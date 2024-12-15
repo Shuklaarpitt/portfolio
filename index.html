@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arpit's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="portfolio.js"></script> -->
 </head>
 <body>
@@ -16,7 +17,7 @@
                     <li><a href="#About">About</a></li>
                     <li><a href="#Project">Project</a></li>
                     <li><a href="#Skill">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#details">Contact</a></li>
                 </ul>
             </nav>
         <div id="Header-text">
@@ -27,7 +28,7 @@
             <img src="MyPhoto.jpg" alt="Myphoto" draggable="false">
             <div id="About-content">
                 <h2>About Myself.</h2>
-                <p>Hi, I’m Arpit Shukla, a 20-year-old budding software developer from the vibrant city of Chhindwara. Currently pursuing a B.Tech in Computer Science at Baderia Global Institute of Engineering and Management, I’m passionate about crafting innovative solutions through code. With a strong focus on web development, I’m building a skill set that combines creativity with technology to design user-centric digital experiences. Fueled by curiosity and a drive for excellence, I’m on a journey to contribute meaningfully to the software industry while continuously expanding my horizons. Let’s shape the future, one line of code at a time!
+                <p>Hi, I’m <b>Arpit Shukla</b>, a 20-year-old budding software developer from the vibrant city of Chhindwara. Currently pursuing a B.Tech in Computer Science at Baderia Global Institute of Engineering and Management, I’m passionate about crafting innovative solutions through code. With a strong focus on web development, I’m building a skill set that combines creativity with technology to design user-centric digital experiences. Fueled by curiosity and a drive for excellence, I’m on a journey to contribute meaningfully to the software industry while continuously expanding my horizons. Let’s shape the future, one line of code at a time!
 
                 </p>
             </div>
@@ -91,20 +92,33 @@
             </div>
         </div>
         <div id="Contact">
-            <p id="Contact-Me">Contact ME</p>
+            <p id="Contact-Me">Contact Me:</p>
                 <div id="details">
+                    <h2>Please fill this form to contact me..</h2>
                     <form action="">
                         <fieldset>
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Type Your Nmae Here">
-                            <label for="Mobile">Mobile No.:</label>
-                            <input type="phone" id="Mobile" name="Mobile" placeholder="Enter Your Number Here">
-                            <label for="eamil">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Enter Your email Here">
-                            <textarea name="Work" id="Work" placeholder="Type Something Here!"></textarea>
+                            <input type="text" id="name" name="name" placeholder="Type Your Name Here" required><br><br>
+                            <label for="Mobile">Mobile No. :</label>
+                            <input type="number" id="Mobile" name="Mobile" placeholder="Enter Your Number Here" required><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Your email Here" required><br><br>
+                            <textarea name="Work" id="Work" placeholder="Type Something Here!"></textarea><br>
+                            <input type="submit" name="submit" id="submit">
                         </fieldset>
                     </form>
                 </div>
         </div>
+        <footer>
+            <div id="social-media">
+                <a href="#https://www.facebook.com/profile.php?id=100053972411581" class="fa fa-facebook" target="_blank"></a>
+                <a href="#https://x.com/shuklaarpit383" class="fa fa-twitter" target="_blank"></a>
+                <a href="#www.linkedin.com/in/arpit-s-5207a4253" class="fa fa-linkedin" target="_blank"></a>
+                <a href="#https://www.instagram.com/arpittshuklaa/" class="fa fa-instagram" target="_blank"></a>
+            </div>
+            <div id="copy-right">
+                <span>A Site Made By Arpit Shukla.</span>
+            </div>
+        </footer>
 </body>
 </html>
