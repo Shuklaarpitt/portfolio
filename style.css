@@ -80,6 +80,7 @@ nav ul li:hover::after{
     display: flex;
     img{
         width: 500px;
+        height: 500px;
         border-radius: 50%;
     }
 }
@@ -258,7 +259,7 @@ nav ul li:hover::after{
     #details
     {
         padding: 1%;
-        margin: 2% 3%;
+        margin: 2% 5%;
         background-color: #FF004F;
         border-radius: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -358,5 +359,9 @@ footer
         background-color: #3C3C3C;
         color: #080808;
         text-align: center;
+        img
+        {
+            height: 15px;
+        }
     }
 }
